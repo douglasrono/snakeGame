@@ -1,4 +1,4 @@
-var Snake = (function () {
+var Snake = ( () =>{
 
   const INITIAL_TAIL = 2;
   var fixedTail = true;

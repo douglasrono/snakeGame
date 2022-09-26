@@ -1,23 +1,26 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.game-canvas {
-  width: 100%;
-  height: 100vw;
-  max-width: 500px;
-  max-height:500px;
-  margin-left: auto;
-  margin-right: auto;
+#wrapper canvas{
+  width: 80vmin;
+  height:80vmin ;
 }
-
 .keys {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  width: 100%;
+  
   padding: 10px;
-  box-sizing: border-box;
-  height: 200px;
+  
   margin: auto;
 }
 
@@ -78,8 +81,4 @@ body {
   background: #555;
 }
 
-#game-container {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(220, 220, 220, 0.6);
-}
+

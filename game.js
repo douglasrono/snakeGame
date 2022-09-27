@@ -15,7 +15,7 @@ var Snake = ( () =>{
 
   var walls = false;
 
-  var fruit = { x:1, y:1 };
+  const fruit = { x:1, y:1 };
 
   var trail = [];
   var tail = INITIAL_TAIL;
@@ -24,18 +24,18 @@ var Snake = ( () =>{
   var points = 0;
   var pointsMax = 0;
 
-  var ActionEnum = { 'none':0, 'up':1, 'down':2, 'left':3, 'right':4 };
+  const ActionEnum = { 'none':0, 'up':1, 'down':2, 'left':3, 'right':4 };
   Object.freeze(ActionEnum);
   var lastAction = ActionEnum.none;
 
-  function setup () {
+   setup = ()=> {
     canv = document.getElementById('gc');
     ctx = canv.getContext('2d');
 
     
   }
 
-  var game = {
+  const game = {
 
     reset: function () {
       ctx.fillStyle = 'black';
